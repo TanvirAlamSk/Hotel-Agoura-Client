@@ -1,0 +1,25 @@
+.carousel {
+    height: 700px;
+
+}
+
+.carosel1 {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assetes/img/carousel-1.jpg");
+
+
+}
+
+.carosel2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assetes/img/carousel-2.jpg");
+}
+
+
+
+/* .side-line {
+    height: 3px;
+    width: 30px;
+    background-color: yellow;
+    color: brown;
+    padding: 0px 10px;
+} */

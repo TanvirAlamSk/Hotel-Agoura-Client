@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "type": "Junior Suite",
+        "bed": 3,
+        "bath": 2,
+        "image": "./image/room-1.jpg",
+        "Internet": "Free WiFi",
+        "discription": "The 3 restaurants are perfect spots to grab a bite to eat, and you can unwind with a drink at the bar/lounge or visit the sauna for a relaxing end to the day. An indoor pool, a fitness center, and a steam room are other highlights at this luxurious hotel. Fellow travelers say good things about the spacious guestrooms. The property is just a short walk to public transportation: Zaoying Station is 8 minutes and Agricultural Exhibition Center Station is 12 minutes.",
+        "price": 140
+    },
+    {
+        "id": 2,
+        "type": "Executive Suite",
+        "bed": 3,
+        "bath": 2,
+        "image": "./image/room-2.jpg",
+        "Internet": "Free WiFi",
+        "discription": "You can visit the spa to be pampered with massages, facials, or hydrotherapy, and The Open Kitchen, one of 3 restaurants, serves international cuisine and is open for breakfast, lunch, and dinner. Other highlights at this luxurious hotel include 2 bars/lounges, an indoor pool, and a health club. The helpful staff and overall property condition get great marks from fellow travelers. The property is just a short walk to public transportation: Xingangdong Station is 4 minutes and Xingangdong Station is 7 minutes.",
+        "price": 170
+    },
+    {
+        "id": 3,
+        "type": "Super Deluxe",
+        "bed": 3,
+        "bath": 2,
+        "image": "./image/room-3.jpg",
+        "Internet": "Free WiFi",
+        "discription": "Guests can visit the spa to be pampered with massages, body wraps, or facials, and Cachet, one of 3 restaurants, serves international cuisine. An indoor pool, a bar/lounge, and a fitness center are other highlights at this luxurious hotel. Fellow travelers say good things about the helpful staff and overall property condition. The property is just a short walk to public transportation: South Huangpi Road Station is 4 minutes and Xintiandi Station is 7 minutes.",
+        "price": 190
+    }
+]
