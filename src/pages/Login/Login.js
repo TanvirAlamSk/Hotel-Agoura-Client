@@ -1,17 +1,21 @@
 import React, { useContext } from 'react';
 import Header from '../../component/Header/Header';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./Login.css"
 import { AuthContext } from '../../context/UserContext';
 
 const Login = () => {
-    const { user } = useContext(AuthContext)
-
+    const { login, gmailLogin } = useContext(AuthContext)
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || "/";
     const handleLogin = (event) => {
         event.preventDefault();
         const email = event.target.email.value
         const password = event.target.password.value
-        console.log(email, password)
+        login(email, password);
+        event.target.reset();
+        navigate(from, { replace: true });
     }
     return (
         <div>
@@ -37,7 +41,7 @@ const Login = () => {
                             <div className="social-login">
                                 <ul>
                                     <li className="google">
-                                        <button className='google-link'>Google</button>
+                                        <button onClick={gmailLogin} className='google-link'>Google</button>
                                     </li>
                                     {/* <li className="fb">
                                         <button className='facebook-link'>Facebook</button>

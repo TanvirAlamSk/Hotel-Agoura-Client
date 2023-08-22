@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css'
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/UserContext';
 
 const Header = () => {
+    const { user, logout } = useContext(AuthContext)
     return (
         <div>
             <div className="navbar bg-blue-950 mr-8 lg:mr-0 lg:px-20 ">
@@ -55,8 +57,11 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-
-                    <button className='text-white font-semibold hover:text-orange-400 '><Link to="/login">Login</Link></button>
+                    {user ?
+                        <button onClick={logout} className='text-white font-semibold hover:text-orange-400 '><Link to="/login">LogOut</Link></button>
+                        :
+                        <button className='text-white font-semibold hover:text-orange-400 '><Link to="/login">Login</Link></button>
+                    }
                 </div>
             </div>
 

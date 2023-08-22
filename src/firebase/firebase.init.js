@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyA0mkUOhNUspedJsIpBdsTblAIUxyPVwP0",
-    authDomain: "hotel-agoura.firebaseapp.com",
-    projectId: "hotel-agoura",
-    storageBucket: "hotel-agoura.appspot.com",
-    messagingSenderId: "158540768836",
-    appId: "1:158540768836:web:39598c3fad5fdc3639be11"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase

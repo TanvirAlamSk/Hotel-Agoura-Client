@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../context/UserContext';
 
 const Signup = () => {
-    const { createUser } = useContext(AuthContext)
+    const { createUser, gmailLogin } = useContext(AuthContext)
     const handleSignup = (event) => {
         event.preventDefault();
         const name = event.target.name.value;
@@ -40,7 +40,7 @@ const Signup = () => {
                         <div className="social-login">
                             <ul>
                                 <li className="google">
-                                    <button className='google-link'>Google</button>
+                                    <button onClick={gmailLogin} className='google-link'>Google</button>
                                 </li>
                                 {/* <li className="fb">
                                     <button className='facebook-link'>Facebook</button>
